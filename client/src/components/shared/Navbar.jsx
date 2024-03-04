@@ -14,38 +14,45 @@ const Navbar = () => {
   }
   const navLinks = (
     <>
-      <li>
+      
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
+            isPending ? "pending" : isActive ? "active border-b-4 border-purple-600 text-purple-500 font-bold py-2 px-5 " : ""
           }
         >
-          Home
+          HOME
         </NavLink>
-      </li>
+        <NavLink
+          to="/about"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active border-b-4 border-purple-600 text-purple-500 font-bold py-2 px-5 " : ""
+          }
+        >
+          ABOUT
+        </NavLink>
+      
       {!user ? (
         <>
-          <li>
+          
             <NavLink
               to="/login"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "pending" : isActive ? "active border-b-4 border-purple-700 text-purple-700 font-bold py-2 px-5 rounded-lg" : ""
               }
             >
-              LogIn
+              LOG IN
             </NavLink>
-          </li>
-          <li>
+          
             <NavLink
               to="/register"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "pending" : isActive ? "active bg-purple-600 py-2 px-5 rounded-lg text-white" : ""
               }
             >
-              Register
+              REGISTER
             </NavLink>
-          </li>
+          
         </>
       ) : (
         <>
@@ -55,7 +62,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              className="dropdown-content z-[20] menu p-2 shadow bg-base-100 text-black rounded-box w-52"
             >
               <li>
                 <p>{user.displayName}</p>
@@ -70,12 +77,12 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="drawer">
+    <div className="drawer absolute top-0 left-0 z-50">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
         <div className="w-full navbar">
-          <div className="flex-none lg:hidden">
+          <div className="flex-none lg:hidden text-white">
             <label
               htmlFor="my-drawer-3"
               aria-label="open sidebar"
@@ -96,11 +103,11 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-          <div className="flex-1 px-2 mx-2 text-3xl font-bold">
+          <div className="flex-1 px-2 mx-2 text-3xl font-bold text-white">
             Tour <span className="text-purple-600"> Booking</span>
           </div>
           <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal flex items-center">
+            <ul className="menu menu-horizontal flex items-center gap-6 text-white ">
               {/* Navbar menu content here */}
               {navLinks}
             </ul>
@@ -113,7 +120,7 @@ const Navbar = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 z-50">
+        <ul className="menu p-4 w-80 min-h-full bg-base-200  z-50">
           {/* Sidebar content here */}
           {navLinks}
         </ul>

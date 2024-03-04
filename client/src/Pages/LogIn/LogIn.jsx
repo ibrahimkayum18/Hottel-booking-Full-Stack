@@ -1,9 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logAnimation from "./login.json";
 import Lottie from "lottie-react";
 import GoogleLogin from "../../components/shared/GoogleLogin";
+import useAuth from "../../Hooks/useAuth";
+import toast from "react-hot-toast";
 
 const LogIn = () => {
+  const {login} = useAuth()
+  const navigate = useNavigate()
+
+  const handleLogIn = e => {
+    e.preventDefault()
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    // console.log(email, password);
+    login(email, password)
+    .then(() => {
+      toast.success("User Logged In Successfully")
+      navigate('/')
+    })
+  }
   return (
     <div>
       <div className="hero min-h-screen bg-base-200 -z-50">
@@ -13,7 +29,7 @@ const LogIn = () => {
             <Lottie className="lg:w-3/4 mx-auto" animationData={logAnimation} />
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 lg:w-1/2">
-            <form className="card-body">
+            <form onSubmit={handleLogIn} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
