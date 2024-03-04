@@ -14,8 +14,8 @@ const HomeBanner = () => {
         <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
           Experience luxury at its finest.
         </p>
-        <button className="bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg mt-4 sm:mt-6 md:mt-8 hover:bg-purple-500 hover:text-white transition duration-300 lg:w-1/4 mx-auto">
-          Book Now
+        <button className="animated-full-btn py-2 lg:w-1/4 mx-auto rounded-full border-2  mt-3 ">
+          <span className="z-50 ">Book Now</span>
         </button>
       </div>
     </div>

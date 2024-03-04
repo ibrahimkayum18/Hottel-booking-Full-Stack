@@ -18,18 +18,18 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active border-b-4 border-purple-600 text-purple-500 font-bold py-2 px-5 " : ""
+            isPending ? "pending" : isActive ? "active text-purple-700 font-bold" : ""
           }
         >
-          HOME
+          <span className="animated-button">HOME</span>
         </NavLink>
         <NavLink
           to="/about"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active border-b-4 border-purple-600 text-purple-500 font-bold py-2 px-5 " : ""
+            isPending ? "pending" : isActive ? "active text-purple-700 font-bold" : ""
           }
         >
-          ABOUT
+          <span className="animated-button">ABOUT</span>
         </NavLink>
       
       {!user ? (
@@ -38,19 +38,21 @@ const Navbar = () => {
             <NavLink
               to="/login"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active border-b-4 border-purple-700 text-purple-700 font-bold py-2 px-5 rounded-lg" : ""
+                isPending ? "pending" : isActive ? "active text-purple-700 font-bold" : ""
               }
             >
-              LOG IN
+              <span className="animated-button">LOG IN</span>
+              
             </NavLink>
           
             <NavLink
               to="/register"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active bg-purple-600 py-2 px-5 rounded-lg text-white" : ""
+                isPending ? "pending" : isActive ? "active text-purple-700 font-bold" : ""
               }
             >
-              REGISTER
+               <span className="animated-button">REGISTER</span>
+              
             </NavLink>
           
         </>
@@ -107,7 +109,7 @@ const Navbar = () => {
             Tour <span className="text-purple-600"> Booking</span>
           </div>
           <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal flex items-center gap-6 text-white ">
+            <ul className="menu menu-horizontal flex items-center z-50 gap-6 text-white ">
               {/* Navbar menu content here */}
               {navLinks}
             </ul>
@@ -120,7 +122,7 @@ const Navbar = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200  z-50">
+        <ul className="menu p-4 w-80 min-h-full bg-base-200 space-y-4 z-50">
           {/* Sidebar content here */}
           {navLinks}
         </ul>

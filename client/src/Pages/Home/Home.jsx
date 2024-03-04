@@ -1,11 +1,14 @@
+import Explore from "./Explore";
 import HomeBanner from "./HomeBanner";
+import Swipper from "./Swipper";
 
 const Home = () => {
   
     return (
-        <div>
+        <div className="">
             <HomeBanner />
-            <h2>This is home</h2>
+            <Explore />
+            <Swipper />
         </div>
     );
 };
