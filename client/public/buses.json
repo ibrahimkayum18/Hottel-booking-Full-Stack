@@ -1,0 +1,173 @@
+[
+    {
+      "bus_name": "City Express",
+      "bus_image": "city_express.jpg",
+      "from": "New York",
+      "to": "Los Angeles",
+      "date": "2024-03-10",
+      "price": 50,
+      "available_seat": 20,
+      "route": "Direct",
+      "departure_time": "08:00 AM",
+      "bus_type": "Sleeper",
+      "host": {
+        "author_name": "John Doe",
+        "author_email": "john.doe@example.com",
+        "author_image": "john_doe.jpg"
+      }
+    },
+    {
+      "bus_name": "Transit Express",
+      "bus_image": "transit_express.jpg",
+      "from": "Chicago",
+      "to": "Houston",
+      "date": "2024-03-12",
+      "price": 60,
+      "available_seat": 15,
+      "route": "One-stop",
+      "departure_time": "09:30 AM",
+      "bus_type": "Semi-Sleeper",
+      "host": {
+        "author_name": "Jane Smith",
+        "author_email": "jane.smith@example.com",
+        "author_image": "jane_smith.jpg"
+      }
+    },
+    {
+      "bus_name": "Metro Bus",
+      "bus_image": "metro_bus.jpg",
+      "from": "San Francisco",
+      "to": "Seattle",
+      "date": "2024-03-15",
+      "price": 45,
+      "available_seat": 25,
+      "route": "Direct",
+      "departure_time": "10:00 AM",
+      "bus_type": "Standard",
+      "host": {
+        "author_name": "David Johnson",
+        "author_email": "david.johnson@example.com",
+        "author_image": "david_johnson.jpg"
+      }
+    },
+    {
+      "bus_name": "Swift Travel",
+      "bus_image": "swift_travel.jpg",
+      "from": "Boston",
+      "to": "Washington",
+      "date": "2024-03-18",
+      "price": 55,
+      "available_seat": 18,
+      "route": "Direct",
+      "departure_time": "11:00 AM",
+      "bus_type": "Luxury",
+      "host": {
+        "author_name": "Emily Brown",
+        "author_email": "emily.brown@example.com",
+        "author_image": "emily_brown.jpg"
+      }
+    },
+    {
+      "bus_name": "Freedom Bus",
+      "bus_image": "freedom_bus.jpg",
+      "from": "Miami",
+      "to": "Orlando",
+      "date": "2024-03-20",
+      "price": 40,
+      "available_seat": 22,
+      "route": "Direct",
+      "departure_time": "12:30 PM",
+      "bus_type": "Economy",
+      "host": {
+        "author_name": "Michael Wilson",
+        "author_email": "michael.wilson@example.com",
+        "author_image": "michael_wilson.jpg"
+      }
+    },
+    {
+      "bus_name": "Golden Transit",
+      "bus_image": "golden_transit.jpg",
+      "from": "Denver",
+      "to": "Phoenix",
+      "date": "2024-03-22",
+      "price": 65,
+      "available_seat": 17,
+      "route": "One-stop",
+      "departure_time": "01:00 PM",
+      "bus_type": "Luxury",
+      "host": {
+        "author_name": "Jessica Lee",
+        "author_email": "jessica.lee@example.com",
+        "author_image": "jessica_lee.jpg"
+      }
+    },
+    {
+      "bus_name": "Skyline Express",
+      "bus_image": "skyline_express.jpg",
+      "from": "Atlanta",
+      "to": "Nashville",
+      "date": "2024-03-25",
+      "price": 55,
+      "available_seat": 20,
+      "route": "Direct",
+      "departure_time": "02:00 PM",
+      "bus_type": "Semi-Luxury",
+      "host": {
+        "author_name": "Daniel Miller",
+        "author_email": "daniel.miller@example.com",
+        "author_image": "daniel_miller.jpg"
+      }
+    },
+    {
+      "bus_name": "Starliner Bus",
+      "bus_image": "starliner_bus.jpg",
+      "from": "Las Vegas",
+      "to": "Salt Lake City",
+      "date": "2024-03-28",
+      "price": 60,
+      "available_seat": 16,
+      "route": "Direct",
+      "departure_time": "03:30 PM",
+      "bus_type": "Sleeper",
+      "host": {
+        "author_name": "Sarah Martinez",
+        "author_email": "sarah.martinez@example.com",
+        "author_image": "sarah_martinez.jpg"
+      }
+    },
+    {
+      "bus_name": "Sunrise Travel",
+      "bus_image": "sunrise_travel.jpg",
+      "from": "Dallas",
+      "to": "Austin",
+      "date": "2024-03-30",
+      "price": 45,
+      "available_seat": 23,
+      "route": "Direct",
+      "departure_time": "04:00 PM",
+      "bus_type": "Standard",
+      "host": {
+        "author_name": "Christopher Taylor",
+        "author_email": "christopher.taylor@example.com",
+        "author_image": "christopher_taylor.jpg"
+      }
+    },
+    {
+      "bus_name": "Royal Coaches",
+      "bus_image": "royal_coaches.jpg",
+      "from": "Philadelphia",
+      "to": "Pittsburgh",
+      "date": "2024-04-02",
+      "price": 50,
+      "available_seat": 19,
+      "route": "Direct",
+      "departure_time": "05:30 PM",
+      "bus_type": "Luxury",
+      "host": {
+        "author_name": "Rebecca Anderson",
+        "author_email": "rebecca.anderson@example.com",
+        "author_image": "rebecca_anderson.jpg"
+      }
+    }
+  ]
+  

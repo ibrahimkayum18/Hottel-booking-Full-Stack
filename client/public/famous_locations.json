@@ -1,0 +1,33 @@
+[
+    {
+      "image": "https://i.ibb.co/vjcjdTY/pexels-asad-photo-maldives-457882.jpg",
+      "location": "Cox's Bazar",
+      "rating": 4.7,
+      "total_rating": 23
+    },
+    {
+      "image": "https://i.ibb.co/n8Cy4Mm/pexels-tom-fisk-2666806.jpg",
+      "location": "Sundarbans",
+      "rating": 4.6,
+      "total_rating": 23
+    },
+    {
+      "image": "https://i.ibb.co/0tYGwT0/pexels-quang-nguyen-vinh-2132180.jpg",
+      "location": "Sajek Valley",
+      "rating": 4.5,
+      "total_rating": 22
+    },
+    {
+      "image": "https://i.ibb.co/PgsHLvN/pexels-pixabay-237272.jpg",
+      "location": "Kuakata",
+      "rating": 4.4,
+      "total_rating": 22
+    },
+    {
+      "image": "https://i.ibb.co/DCTrdTv/pexels-asif-al-naeem-19102359.jpg",
+      "location": "Sylhet",
+      "rating": 4.3,
+      "total_rating": 21
+    }
+  ]
+  

@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import toast from "react-hot-toast";
 
@@ -76,14 +76,22 @@ const Navbar = () => {
         <>
           <div className="dropdown dropdown-end ml-5">
             <div tabIndex={0} role="button" className=" m-1">
-              <img className="h-12 w-12 rounded-full " src={user.photoURL} alt="" />
+              <img className="h-10 w-10 rounded-full " src={user.photoURL} alt="" />
             </div>
             <ul
               tabIndex={0}
-              className="dropdown-content z-[20] menu p-2 shadow bg-base-100 text-black rounded-box w-52"
+              className="dropdown-content z-[20] menu p-2 shadow bg-black text-white rounded-sm w-52"
             >
+
               <li>
-                <p>{user.displayName}</p>
+                <Link to={'/my-bookings'}>
+                <button>
+                  My Bookings
+                </button>
+                </Link>
+              </li>
+              <li>
+                <p>Account</p>
               </li>
               <li onClick={handleLogOut}>
                 <p>Log out</p>

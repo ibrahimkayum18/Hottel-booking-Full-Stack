@@ -1,4 +1,8 @@
+
+
 const Explore = () => {
+
+
   const locations = [
     {
       name: "Cox's Bazar",
@@ -52,10 +56,10 @@ const Explore = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60 transition-opacity duration-300 group-hover:opacity-0 rounded-md"></div>
           <div className="absolute inset-0 top-[260px] left-5">
             <p className="text-white text-xl font-bold ">
-              {location?.name}
+              {location?.location}
             </p>
             <div className="text-white font-semibold">
-                Hotel Available: {location?.hotels?.length}
+                Review: {location?.rating}
             </div>
           </div>
         </div>
