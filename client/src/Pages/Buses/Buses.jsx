@@ -1,6 +1,5 @@
 import TravelServices from "../../components/shared/TravelServices";
 import BusServiceBanner from "../../components/ui/Banner/BusServiceBanner";
-import Explore from "../../components/ui/Explore";
 
 const Buses = () => {
     const handleSearch = e => {
@@ -47,8 +46,6 @@ const Buses = () => {
         </div>
       </section>
       <TravelServices />
-
-      <Explore />
     </div>
   );
 };

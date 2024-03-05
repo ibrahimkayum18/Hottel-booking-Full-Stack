@@ -1,3 +1,4 @@
+import BestHotels from "../../components/shared/BestHotels";
 import HotelBanner from "../../components/ui/Banner/HotelBanner";
 import Explore from "../../components/ui/Explore";
 
@@ -36,6 +37,7 @@ const Hotels = () => {
         </div>
       </section>
       <Explore />
+      <BestHotels />
     </div>
   );
 };
