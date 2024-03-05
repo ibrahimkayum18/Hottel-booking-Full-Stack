@@ -1,6 +1,7 @@
-import Explore from "./Explore";
-import HomeBanner from "./HomeBanner";
+import Explore from "../../components/ui/Explore";
+import HomeBanner from "../../components/ui/Banner/HomeBanner";
 import Swipper from "./Swipper";
+import TravelServices from "../../components/shared/TravelServices";
 
 const Home = () => {
   
@@ -8,6 +9,7 @@ const Home = () => {
         <div className="">
             <HomeBanner />
             <Explore />
+            <TravelServices />
             <Swipper />
         </div>
     );

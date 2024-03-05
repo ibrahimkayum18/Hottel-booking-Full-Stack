@@ -24,6 +24,22 @@ const Navbar = () => {
           <span className="animated-button">HOME</span>
         </NavLink>
         <NavLink
+          to="/bus"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active text-purple-700 font-bold" : ""
+          }
+        >
+          <span className="animated-button">BUSES</span>
+        </NavLink>
+        <NavLink
+          to="/hotel"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active text-purple-700 font-bold" : ""
+          }
+        >
+          <span className="animated-button">HOTEL</span>
+        </NavLink>
+        <NavLink
           to="/about"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active text-purple-700 font-bold" : ""
